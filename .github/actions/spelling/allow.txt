@@ -1,0 +1,9 @@
+CPPFLAG
+CXXFLAG
+github
+https
+pgf
+shaderc
+ssh
+ubuntu
+workarounds

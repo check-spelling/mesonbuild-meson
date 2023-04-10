@@ -1,0 +1,233 @@
+# See https://github.com/check-spelling/check-spelling/wiki/Configuration-Examples:-excludes
+(?:^|/)(?i)COPYRIGHT
+(?:^|/)(?i)LICEN[CS]E
+(?:^|/)3rdparty/
+(?:^|/)go\.sum$
+(?:^|/)package(?:-lock|)\.json$
+(?:^|/)Pipfile$
+(?:^|/)pyproject.toml
+(?:^|/)requirements(?:-dev|-doc|-test|)\.txt$
+(?:^|/)vendor/
+\.a$
+\.ai$
+\.all-contributorsrc$
+\.avi$
+\.bmp$
+\.bz2$
+\.cer$
+\.class$
+\.coveragerc$
+\.crt$
+\.csr$
+\.dll$
+\.docx?$
+\.drawio$
+\.DS_Store$
+\.eot$
+\.exe$
+\.gif$
+\.git-blame-ignore-revs$
+\.gitattributes$
+\.gitkeep$
+\.graffle$
+\.gz$
+\.icns$
+\.ico$
+\.ipynb$
+\.jar$
+\.jks$
+\.jpe?g$
+\.key$
+\.lib$
+\.lock$
+\.map$
+\.min\..
+\.mo$
+\.mod$
+\.mp[34]$
+\.o$
+\.ocf$
+\.otf$
+\.p12$
+\.parquet$
+\.pdf$
+\.pem$
+\.pfx$
+\.png$
+\.psd$
+\.pyc$
+\.pylintrc$
+\.qm$
+\.s$
+\.so$
+\.svgz?$
+\.sys$
+\.tar$
+\.tiff?$
+\.ttf$
+\.wav$
+\.webm$
+\.webp$
+\.woff2?$
+\.xlsx?$
+\.xz$
+\.zip$
+^\.github/actions/spelling/
+^\Q.github/workflows/spelling.yml\E$
+^\Q.mailmap\E$
+^\QCODEOWNERS\E$
+^\Qdocs/markdown/Getting-meson_ptbr.md\E$
+^\Qdocs/refman/__init__.py\E$
+^\Qmanual tests/13 builddir upgrade/data/foo.dat\E$
+^\Qmanual tests/13 builddir upgrade/foo.1\E$
+^\Qmesonbuild/__init__.py\E$
+^\Qmesonbuild/backend/__init__.py\E$
+^\Qmesonbuild/cmake/data/__init__.py\E$
+^\Qmesonbuild/compilers/mixins/__init__.py\E$
+^\Qmesonbuild/dependencies/data/__init__.py\E$
+^\Qmesonbuild/templates/__init__.py\E$
+^\Qmesonbuild/utils/__init__.py\E$
+^\Qtest cases/common/106 multiple dir configure file/subdir/foo.txt\E$
+^\Qtest cases/common/106 multiple dir configure file/subdir/someinput.in\E$
+^\Qtest cases/common/12 data/somefile.txt\E$
+^\Qtest cases/common/12 data/to_be_renamed_1.txt\E$
+^\Qtest cases/common/12 data/to_be_renamed_3.txt\E$
+^\Qtest cases/common/12 data/to_be_renamed_4.txt\E$
+^\Qtest cases/common/12 data/vanishing/to_be_renamed_2.txt\E$
+^\Qtest cases/common/127 generated assembly/empty.c\E$
+^\Qtest cases/common/130 include order/ctsub/emptyfile.c\E$
+^\Qtest cases/common/136 empty build file/subdir/meson.build\E$
+^\Qtest cases/common/138 C and CPP link/dummy.c\E$
+^\Qtest cases/common/14 configure file/depfile\E$
+^\Qtest cases/common/14 configure file/differentafterbasename1.in\E$
+^\Qtest cases/common/14 configure file/differentafterbasename2.in\E$
+^\Qtest cases/common/14 configure file/dummy.dat\E$
+^\Qtest cases/common/14 configure file/invalid-utf8.bin.in\E$
+^\Qtest cases/common/14 configure file/sameafterbasename.in2\E$
+^\Qtest cases/common/14 configure file/sameafterbasename.in\E$
+^\Qtest cases/common/161 not-found dependency/testlib.c\E$
+^\Qtest cases/common/167 subproject nested subproject dirs/contrib/subprojects/alpha/var/subprojects/wrap_files_might_be_here\E$
+^\Qtest cases/common/168 preserve gendir/com/mesonbuild/subbie.inp\E$
+^\Qtest cases/common/170 generator link whole/meson_test_function.tmpl\E$
+^\Qtest cases/common/190 install_mode/sub2/stub\E$
+^\Qtest cases/common/195 generator in subdir/com/mesonbuild/subbie.inp\E$
+^\Qtest cases/common/215 source set realistic example/boards/meson.build\E$
+^\Qtest cases/common/215 source set realistic example/config/aarch64\E$
+^\Qtest cases/common/215 source set realistic example/dummy.cpp\E$
+^\Qtest cases/common/228 custom_target source/a\E$
+^\Qtest cases/common/241 set and get variable/test1.txt\E$
+^\Qtest cases/common/241 set and get variable/test2.txt\E$
+^\Qtest cases/common/252 install data structured/dir1/bad\E$
+^\Qtest cases/common/252 install data structured/dir1/file1\E$
+^\Qtest cases/common/252 install data structured/dir1/file2\E$
+^\Qtest cases/common/252 install data structured/dir1/file3\E$
+^\Qtest cases/common/252 install data structured/dir2/bad\E$
+^\Qtest cases/common/252 install data structured/dir2/file1\E$
+^\Qtest cases/common/252 install data structured/dir2/file2\E$
+^\Qtest cases/common/252 install data structured/dir2/file3\E$
+^\Qtest cases/common/252 install data structured/dir3/bad\E$
+^\Qtest cases/common/252 install data structured/dir3/file1\E$
+^\Qtest cases/common/252 install data structured/dir3/file2\E$
+^\Qtest cases/common/252 install data structured/dir3/file3\E$
+^\Qtest cases/common/30 sizeof/config.h.in\E$
+^\Qtest cases/common/42 subproject/mylicense.txt\E$
+^\Qtest cases/common/42 subproject/subprojects/sublib/sublicense1.txt\E$
+^\Qtest cases/common/42 subproject/subprojects/sublib/sublicense2.txt\E$
+^\Qtest cases/common/51 run target/.clang-tidy\E$
+^\Qtest cases/common/53 install script/src/a file.txt\E$
+^\Qtest cases/common/56 array methods/a.txt\E$
+^\Qtest cases/common/56 array methods/b.txt\E$
+^\Qtest cases/common/56 array methods/c.txt\E$
+^\Qtest cases/common/57 custom header generator/somefile.txt\E$
+^\Qtest cases/common/59 install subdir/sub2/dircheck/excluded-three.dat\E$
+^\Qtest cases/common/59 install subdir/sub2/excluded-three.dat\E$
+^\Qtest cases/common/59 install subdir/sub2/excluded/two.dat\E$
+^\Qtest cases/common/59 install subdir/sub2/one.dat\E$
+^\Qtest cases/common/86 private include/stlib/foo1.def\E$
+^\Qtest cases/common/86 private include/stlib/foo2.def\E$
+^\Qtest cases/cython/2 generated sources/simpleinclude.pyx\E$
+^\Qtest cases/d/12 root include directory/some/meson.build\E$
+^\Qtest cases/failing/119 structured source empty string/main.rs\E$
+^\Qtest cases/failing/120 structured_sources conflicts/main.rs\E$
+^\Qtest cases/failing/124 subproject sandbox violation/subprojects/subproj1/file.txt\E$
+^\Qtest cases/failing/124 subproject sandbox violation/subprojects/subproj2/file.txt\E$
+^\Qtest cases/failing/124 subproject sandbox violation/subprojects/subproj2/nested/meson.build\E$
+^\Qtest cases/failing/124 subproject sandbox violation/subprojects/subproj3/file.txt\E$
+^\Qtest cases/failing/30 invalid man extension/foo.a1\E$
+^\Qtest cases/failing/31 no man extension/foo\E$
+^\Qtest cases/failing/52 reserved meson prefix/meson-foo/meson.build\E$
+^\Qtest cases/failing/53 wrong shared crate type/foo.rs\E$
+^\Qtest cases/failing/54 wrong static crate type/foo.rs\E$
+^\Qtest cases/failing/67 install_data rename bad size/file1.txt\E$
+^\Qtest cases/failing/67 install_data rename bad size/file2.txt\E$
+^\Qtest cases/failing/73 configuration immutable/input\E$
+^\Qtest cases/failing/87 invalid configure file/input\E$
+^\Qtest cases/failing/90 pch source different folder/include/pch.h\E$
+^\Qtest cases/failing/90 pch source different folder/src/pch.c\E$
+^\Qtest cases/frameworks/10 gtk-doc/doc/foobar1/baz.png.in\E$
+^\Qtest cases/frameworks/28 gir link order 2/samelibname/dummy.c\E$
+^\Qtest cases/frameworks/30 scalapack/main.c\E$
+^\Qtest cases/frameworks/32 boost root/boost/lib/libboost_regex.so.0.1.0\E$
+^\Qtest cases/frameworks/33 boost split root/boost/lib/libboost_regex.so.0.2.0\E$
+^\Qtest cases/frameworks/35 boost symlinks/boost/Cellar/boost-python/0.3.0/lib/libboost_python.so.0.3.0\E$
+^\Qtest cases/frameworks/35 boost symlinks/boost/Cellar/boost/0.3.0/lib/libboost_regex.so.0.3.0\E$
+^\Qtest cases/java/9 jni/lib/com_mesonbuild_JniTest.c\E$
+^\Qtest cases/linuxlike/5 dependency versions/subprojects/somelib/lib.c\E$
+^\Qtest cases/linuxlike/5 dependency versions/subprojects/somelibnover/lib.c\E$
+^\Qtest cases/linuxlike/5 dependency versions/subprojects/somelibver/lib.c\E$
+^\Qtest cases/linuxlike/7 library versions/test.json\E$
+^\Qtest cases/native/5 install script/file.txt\E$
+^\Qtest cases/native/9 override with exe/main2.input\E$
+^\Qtest cases/osx/2 library versions/test.json\E$
+^\Qtest cases/osx/7 bitcode/meson.build\E$
+^\Qtest cases/python/1 basic/gluon/__init__.py\E$
+^\Qtest cases/python/7 install path/structured/alpha/one.py\E$
+^\Qtest cases/python/7 install path/structured/alpha/three.py\E$
+^\Qtest cases/python/7 install path/structured/alpha/two.py\E$
+^\Qtest cases/python/7 install path/structured/beta/one.py\E$
+^\Qtest cases/python/7 install path/structured/one.py\E$
+^\Qtest cases/python/7 install path/structured/two.py\E$
+^\Qtest cases/python/7 install path/test.py\E$
+^\Qtest cases/python3/1 basic/gluon/__init__.py\E$
+^\Qtest cases/unit/100 custom target name/file.txt.in\E$
+^\Qtest cases/unit/22 warning location/a.c\E$
+^\Qtest cases/unit/22 warning location/b.c\E$
+^\Qtest cases/unit/22 warning location/main.c\E$
+^\Qtest cases/unit/22 warning location/sub/c.c\E$
+^\Qtest cases/unit/22 warning location/sub/d.c\E$
+^\Qtest cases/unit/22 warning location/sub/sub.c\E$
+^\Qtest cases/unit/41 rpath order/subprojects/sub1/lib.c\E$
+^\Qtest cases/unit/41 rpath order/subprojects/sub2/lib.c\E$
+^\Qtest cases/unit/42 dep order/lib1.c\E$
+^\Qtest cases/unit/42 dep order/lib2.c\E$
+^\Qtest cases/unit/52 pkgconfig static link order/dummy.c\E$
+^\Qtest cases/unit/54 introspect buildoptions/subprojects/projectBad/meson.build\E$
+^\Qtest cases/unit/58 introspect buildoptions/subprojects/evilFile.txt\E$
+^\Qtest cases/unit/58 introspect buildoptions/subprojects/projectBad/meson.build\E$
+^\Qtest cases/unit/59 native file override/crossfile2\E$
+^\Qtest cases/unit/59 native file override/crossfile\E$
+^\Qtest cases/unit/59 native file override/meson_options.txt\E$
+^\Qtest cases/unit/59 native file override/nativefile\E$
+^\Qtest cases/unit/73 dep files/foo.c\E$
+^\Qtest cases/unit/92 install skip subprojects/foo/foofile\E$
+^\Qtest cases/unit/99 install all targets/bar-custom.txt\E$
+^\Qtest cases/unit/99 install all targets/bar-devel.h\E$
+^\Qtest cases/unit/99 install all targets/bar-notag.txt\E$
+^\Qtest cases/unit/99 install all targets/foo.in\E$
+^\Qtest cases/unit/99 install all targets/foo1-devel.h\E$
+^\Qtest cases/unit/99 install all targets/subdir/bar2-devel.h\E$
+^\Qtest cases/unit/99 install all targets/subdir/foo2.in\E$
+^\Qtest cases/unit/99 install all targets/subdir/foo3-devel.h\E$
+^\Qtest cases/vala/12 custom output/bar.vala\E$
+^\Qtest cases/vala/12 custom output/foo.vala\E$
+^\Qtest cases/vala/8 generated sources/test.json\E$
+^\Qtest cases/windows/12 resources with custom targets/res/resource.h\E$
+^\Qtest cases/windows/14 resources with custom target depend_files/ico/sample.ico.in\E$
+^\Qtest cases/windows/15 resource scripts with duplicate filenames/a/rsrc.rc\E$
+^\Qtest cases/windows/15 resource scripts with duplicate filenames/b/rsrc.rc\E$
+^\Qtest cases/windows/15 resource scripts with duplicate filenames/c/rsrc.rc\E$
+^\Qtest cases/windows/16 gui app/dummy.c\E$
+^\Qtest cases/windows/5 resources/res/dummy.c\E$
+^\Qtest cases/windows/7 dll versioning/test.json\E$
+^\Qtools/ac_converter.py\E$
+ignore$
