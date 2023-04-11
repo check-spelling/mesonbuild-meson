@@ -352,7 +352,7 @@ class AstInterpreter(InterpreterBase):
             return None # Loop detected
         id_loop_detect += [node.ast_id]
 
-        # Try to evealuate the value of the node
+        # Try to evaluate the value of the node
         if isinstance(node, IdNode):
             result = quick_resolve(node)
 
