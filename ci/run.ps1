@@ -3,7 +3,7 @@ if ($LastExitCode -ne 0) {
   exit 0
 }
 
-# remove Chocolately, MinGW, Strawberry Perl from path, so we don't find gcc/gfortran and try to use it
+# remove Chocolatey, MinGW, Strawberry Perl from path, so we don't find gcc/gfortran and try to use it
 # remove PostgreSQL from path so we don't pickup a broken zlib from it
 $env:Path = ($env:Path.Split(';') | Where-Object { $_ -notmatch 'mingw|Strawberry|Chocolatey|PostgreSQL' }) -join ';'
 
