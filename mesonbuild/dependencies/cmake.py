@@ -489,7 +489,7 @@ class CMakeDependency(ExternalDependency):
             libs_raw = [x for x in self.traceparser.get_cmake_var('PACKAGE_LIBRARIES') if x]
 
             # CMake has a "fun" API, where certain keywords describing
-            # configurations can be in the *_LIBRARIES vraiables. See:
+            # configurations can be in the *_LIBRARIES variables. See:
             # - https://github.com/mesonbuild/meson/issues/9197
             # - https://gitlab.freedesktop.org/libnice/libnice/-/issues/140
             # - https://cmake.org/cmake/help/latest/command/target_link_libraries.html#overview  (the last point in the section)
