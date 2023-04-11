@@ -180,7 +180,7 @@ local -a meson_commands=(
   '--repeat[number of times to run the tests]:number of times to repeat: '
   '--no-rebuild[do not rebuild before running tests]'
   '--gdb[run tests under gdb]'
-  '--gdb-path=[program to run for gdb (can be wrapper or compaitble program)]:program:_path_commands'
+  '--gdb-path=[program to run for gdb (can be wrapper or compatible program)]:program:_path_commands'
   '--list[list available tests]'
   '(--wrapper --wrap)'{'--wrapper=','--wrap='}'[wrapper to run tests with]:wrapper program:_path_commands'
   "$__meson_cd"
