@@ -167,7 +167,7 @@ class Properties:
         return language + '_stdlib' in self.properties
 
     # Some of get_stdlib, get_root, get_sys_root are wider than is actually
-    # true, but without heterogenious dict annotations it's not practical to
+    # true, but without heterogeneous dict annotations it's not practical to
     # narrow them
     def get_stdlib(self, language: str) -> T.Union[str, T.List[str]]:
         stdlib = self.properties[language + '_stdlib']
