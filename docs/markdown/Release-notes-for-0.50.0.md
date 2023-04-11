@@ -227,7 +227,7 @@ Furthermore, the `filename` and `install_filename` keys in the targets
 introspection are now lists of strings with identical length.
 
 The `--target-files` option is now deprecated, since the same information
-can be acquired from the `--tragets` introspection API.
+can be acquired from the `--targets` introspection API.
 
 ## Meson file rewriter
 
