@@ -2295,7 +2295,7 @@ class OptionKey:
     def evolve(self, name: T.Optional[str] = None, subproject: T.Optional[str] = None,
                machine: T.Optional[MachineChoice] = None, lang: T.Optional[str] = '',
                module: T.Optional[str] = '') -> 'OptionKey':
-        """Create a new copy of this key, but with alterted members.
+        """Create a new copy of this key, but with altered members.
 
         For example:
         >>> a = OptionKey('foo', '', MachineChoice.Host)
