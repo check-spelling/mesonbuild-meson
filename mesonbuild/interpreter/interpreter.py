@@ -235,7 +235,7 @@ class InterpreterRuleRelaxation(Enum):
     generate a Meson AST via introspection, etc.
     '''
 
-    ALLOW_BUILD_DIR_FILE_REFFERENCES = 1
+    ALLOW_BUILD_DIR_FILE_REFERENCES = 1
 
 permitted_dependency_kwargs = {
     'allow_fallback',
@@ -1048,7 +1048,7 @@ class Interpreter(InterpreterBase, HoldableObject):
                     [str(f) for f in cm_int.bs_files],
                     is_translated=True,
                     relaxations={
-                        InterpreterRuleRelaxation.ALLOW_BUILD_DIR_FILE_REFFERENCES,
+                        InterpreterRuleRelaxation.ALLOW_BUILD_DIR_FILE_REFERENCES,
                     }
             )
             result.cm_interpreter = cm_int
@@ -3034,7 +3034,7 @@ class Interpreter(InterpreterBase, HoldableObject):
             inputtype = 'directory'
         else:
             inputtype = 'file'
-        if InterpreterRuleRelaxation.ALLOW_BUILD_DIR_FILE_REFFERENCES in self.relaxations and builddir in norm.parents:
+        if InterpreterRuleRelaxation.ALLOW_BUILD_DIR_FILE_REFERENCES in self.relaxations and builddir in norm.parents:
             return
         if srcdir not in norm.parents:
             # Grabbing files outside the source tree is ok.
