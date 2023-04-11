@@ -1760,10 +1760,10 @@ class AllPlatformTests(BasePlatformTests):
         since system libraries -lm will never be found statically.
         https://github.com/mesonbuild/meson/issues/2785
         '''
-        (cc, stlinker, objext, shext) = self.detect_prebuild_env()
+        (cc, stlinker, object, shext) = self.detect_prebuild_env()
         testdir = os.path.join(self.unit_test_dir, '18 pkgconfig static')
         source = os.path.join(testdir, 'foo.c')
-        objectfile = os.path.join(testdir, 'foo.' + objext)
+        objectfile = os.path.join(testdir, 'foo.' + object)
         stlibfile = os.path.join(testdir, 'libfoo.a')
         impfile = os.path.join(testdir, 'foo.lib')
         if cc.get_argument_syntax() == 'msvc':
