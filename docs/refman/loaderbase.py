@@ -108,7 +108,7 @@ class _Resolver:
         for obj in func.returns.resolved:
             obj.data_type.returned_by += [func]
 
-        # Handle kwargs inehritance
+        # Handle kwargs inheritance
         for base_name in func.kwargs_inherit:
             base_name = base_name.strip()
             assert base_name in self.func_map, f'Unknown base function `{base_name}` for {func.name}'
