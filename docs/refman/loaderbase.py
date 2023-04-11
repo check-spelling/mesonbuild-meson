@@ -123,7 +123,7 @@ class _Resolver:
             missing = {k: v for k, v in base.kwargs.items() if k in base_keys - curr_keys}
             func.kwargs.update(missing)
 
-        # Handloe other args inheritance
+        # Handle other args inheritance
         _T = T.TypeVar('_T', bound=T.Union[ArgBase, T.List[PosArg]])
         def resolve_inherit(name: str, curr: _T, resolver: T.Callable[[Function], _T]) -> _T:
             if name and not curr:
