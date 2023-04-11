@@ -862,7 +862,7 @@ class CoreData:
 
     def set_default_options(self, default_options: T.MutableMapping[OptionKey, str], subproject: str, env: 'Environment') -> None:
         # Main project can set default options on subprojects, but subprojects
-        # can only set default options on themself.
+        # can only set default options on themselves.
         # Preserve order: if env.options has 'buildtype' it must come after
         # 'optimization' if it is in default_options.
         options: T.MutableMapping[OptionKey, T.Any] = OrderedDict()
