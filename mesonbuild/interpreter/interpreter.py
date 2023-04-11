@@ -1997,7 +1997,7 @@ class Interpreter(InterpreterBase, HoldableObject):
                 build_by_default = kwargs['build_always']
             build_always_stale = kwargs['build_by_default']
 
-        # These are are nullaable so that we can know whether they're explicitly
+        # These are nullaable so that we can know whether they're explicitly
         # set or not. If they haven't been overwritten, set them to their true
         # default
         if build_by_default is None:
