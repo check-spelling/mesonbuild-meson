@@ -89,7 +89,7 @@ kwargs:
     default: false
     description: |
       When set to true flags this target as a GUI application
-      on platforms where this makes a differerence, **deprecated** since
+      on platforms where this makes a difference, **deprecated** since
       0.56.0, use `win_subsystem` instead.
 
   link_args:
