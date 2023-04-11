@@ -243,7 +243,7 @@ class BoostLibraryFile():
         return any(self.mod_name.startswith(x) for x in BoostLibraryFile.boost_python_libs)
 
     def fix_python_name(self, tags: T.List[str]) -> T.List[str]:
-        # Handle the boost_python naming madeness.
+        # Handle the boost_python naming madness.
         # See https://github.com/mesonbuild/meson/issues/4788 for some distro
         # specific naming variations.
         other_tags = []  # type: T.List[str]
