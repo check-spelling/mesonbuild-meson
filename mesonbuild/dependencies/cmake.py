@@ -505,7 +505,7 @@ class CMakeDependency(ExternalDependency):
                     libs += [i]
                 # According to the CMake docs, a keyword only works for the
                 # directly the following item and all items without a keyword
-                # are implizitly `general`
+                # are implicitly `general`
                 cfg_matches = True
 
             # Try to use old style variables if no module is specified
