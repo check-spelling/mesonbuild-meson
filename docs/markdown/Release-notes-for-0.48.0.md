@@ -79,7 +79,7 @@ which has special properties such as not buffering stdout and
 serializing all targets in this pool.
 
 The primary use-case for this is to be able to run external commands
-that take a long time to exeute. Without setting this, the user does
+that take a long time to execute. Without setting this, the user does
 not receive any feedback about what the program is doing.
 
 ## `dependency(version:)` now applies to all dependency types
