@@ -1365,7 +1365,7 @@ class Interpreter(InterpreterBase, HoldableObject):
             section, values, kwargs['bool_yn'], kwargs['list_sep'], self.subproject)
 
     def _print_summary(self) -> None:
-        # Add automatic 'Supbrojects' section in main project.
+        # Add automatic 'Subprojects' section in main project.
         all_subprojects = collections.OrderedDict()
         for name, subp in sorted(self.subprojects.items()):
             value = subp.found()
