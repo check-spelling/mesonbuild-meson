@@ -87,9 +87,9 @@ def _install_mode_validator(mode: T.List[T.Union[str, bool, int]]) -> T.Optional
             return f'permission character 9 must be "-", "t", "T", or "x", not {perms[8]}'
 
         if len(mode) >= 2 and not isinstance(mode[1], (int, str, bool)):
-            return 'second componenent can only be a string, number, or False'
+            return 'second component can only be a string, number, or False'
         if len(mode) >= 3 and not isinstance(mode[2], (int, str, bool)):
-            return 'third componenent can only be a string, number, or False'
+            return 'third component can only be a string, number, or False'
 
     return None
 
