@@ -144,7 +144,7 @@ These are provided by the `.system()` method call.
 | cygwin              | The Cygwin environment for Windows |
 | darwin              | Either OSX or iOS |
 | dragonfly           | DragonFly BSD |
-| emscripten          | Emscripten's Javascript environment |
+| emscripten          | Emscripten's JavaScript environment |
 | freebsd             | FreeBSD and its derivatives |
 | gnu                 | GNU Hurd |
 | haiku               | |
