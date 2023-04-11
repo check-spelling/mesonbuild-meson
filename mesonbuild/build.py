@@ -1654,7 +1654,7 @@ You probably should put it in link_with instead.''')
                                      '\n             '
                                      f'If shared_module() was used for {link_target.name} because it has references to undefined symbols,'
                                      '\n             '
-                                     'use shared_libary() with `override_options: [\'b_lundef=false\']` instead.')
+                                     'use shared_library() with `override_options: [\'b_lundef=false\']` instead.')
                     link_target.force_soname = True
 
 class Generator(HoldableObject):
