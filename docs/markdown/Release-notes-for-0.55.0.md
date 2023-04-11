@@ -175,7 +175,7 @@ changed), but is now deprecated.
 ## String concatenation in meson_options.txt
 
 It is now possible to use string concatenation (with the `+`
-opperator) in the `meson_options.txt` file. This allows splitting long
+operator) in the `meson_options.txt` file. This allows splitting long
 option descriptions.
 
 ```meson
