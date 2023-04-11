@@ -11,13 +11,13 @@ x = meson.get_external_property('astring', 'fallback', native: false)
 assert(x==ref, 'did not get native property with native:false and non-cross build.')
 
 
-x = meson.get_external_property('notexist', 'fallback')
+x = meson.get_external_property('nonexistent', 'fallback')
 assert(x=='fallback', 'fallback did not work')
 
-x = meson.get_external_property('notexist', 'fallback', native: true)
+x = meson.get_external_property('nonexistent', 'fallback', native: true)
 assert(x=='fallback', 'fallback native:true did not work')
 
-x = meson.get_external_property('notexist', 'fallback', native: false)
+x = meson.get_external_property('nonexistent', 'fallback', native: false)
 assert(x=='fallback', 'fallback native:false did not work')
 
 
