@@ -839,7 +839,7 @@ class NinjaBackend(backends.Backend):
         generated_sources: T.MutableMapping[str, File]
 
         # List of sources that have been transpiled from a DSL (like Vala) into
-        # a language that is haneled below, such as C or C++
+        # a language that is handled below, such as C or C++
         transpiled_sources: T.List[str]
 
         if 'vala' in target.compilers:
