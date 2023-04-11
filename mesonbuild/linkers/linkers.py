@@ -928,7 +928,7 @@ class WASMDynamicLinker(GnuLikeDynamicLinkerMixin, PosixDynamicLinkerMixin, Dyna
 
 class CcrxDynamicLinker(DynamicLinker):
 
-    """Linker for Renesis CCrx compiler."""
+    """Linker for Renesas CCrx compiler."""
 
     id = 'rlink'
 
