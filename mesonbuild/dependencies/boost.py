@@ -80,7 +80,7 @@ if T.TYPE_CHECKING:
 #   2. Find all boost libraries
 #     2.1 Add all libraries in lib*
 #     2.2 Filter out non boost libraries
-#     2.3 Filter the renaining libraries based on the meson requirements (static/shared, etc.)
+#     2.3 Filter the remaining libraries based on the meson requirements (static/shared, etc.)
 #     2.4 Ensure that all libraries have the same boost tag (and are thus compatible)
 #   3. Select the libraries matching the requested modules
 
