@@ -211,7 +211,7 @@ def _env_validator(value: T.Union[EnvironmentVariables, T.List['TYPE_var'], T.Di
     return None
 
 def _options_validator(value: T.Union[EnvironmentVariables, T.List['TYPE_var'], T.Dict[str, 'TYPE_var'], str, None]) -> T.Optional[str]:
-    # Reusing the env validator is a littl overkill, but nicer than duplicating the code
+    # Reusing the env validator is a little overkill, but nicer than duplicating the code
     return _env_validator(value, allow_dict_list=False)
 
 def split_equal_string(input: str) -> T.Tuple[str, str]:
