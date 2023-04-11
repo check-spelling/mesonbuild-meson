@@ -1,4 +1,4 @@
-# SPDX-Licnese-Identifier: Apache-2.0
+# SPDX-License-Identifier: Apache-2.0
 # Copyright 2012-2021 The Meson development team
 # Copyright © 2021 Intel Corporation
 from __future__ import annotations
