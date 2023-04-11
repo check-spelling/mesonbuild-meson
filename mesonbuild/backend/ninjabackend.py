@@ -830,7 +830,7 @@ class NinjaBackend(backends.Backend):
             self.generate_swift_target(target)
             return
 
-        # Pre-existing target C/C++ sources to be built; dict of full path to
+        # Preexisting target C/C++ sources to be built; dict of full path to
         # source relative to build root and the original File object.
         target_sources: T.MutableMapping[str, File]
 
@@ -879,7 +879,7 @@ class NinjaBackend(backends.Backend):
                 mlog.log(mlog.red('FIXME'), msg)
 
         # Get a list of all generated headers that will be needed while building
-        # this target's sources (generated sources and pre-existing sources).
+        # this target's sources (generated sources and preexisting sources).
         # This will be set as dependencies of all the target's sources. At the
         # same time, also deal with generated sources that need to be compiled.
         generated_source_files = []
@@ -964,7 +964,7 @@ class NinjaBackend(backends.Backend):
             o, s = self.generate_single_compile(target, src, 'vala', [], header_deps)
             obj_list.append(o)
 
-        # Generate compile targets for all the pre-existing sources for this target
+        # Generate compile targets for all the preexisting sources for this target
         for src in target_sources.values():
             if not self.environment.is_header(src):
                 if self.environment.is_llvm_ir(src):
@@ -1505,7 +1505,7 @@ class NinjaBackend(backends.Backend):
                     T.Tuple[T.MutableMapping[str, File], T.MutableMapping]]:
         """
         Splits the target's sources into .vala, .gs, .vapi, and other sources.
-        Handles both pre-existing and generated sources.
+        Handles both preexisting and generated sources.
 
         Returns a tuple (vala, vapi, others) each of which is a dictionary with
         the keys being the path to the file (relative to the build directory)
@@ -1515,7 +1515,7 @@ class NinjaBackend(backends.Backend):
         vapi: T.MutableMapping[str, File] = OrderedDict()
         others: T.MutableMapping[str, File] = OrderedDict()
         othersgen: T.MutableMapping[str, File] = OrderedDict()
-        # Split pre-existing sources
+        # Split preexisting sources
         for s in t.get_sources():
             # BuildTarget sources are always mesonlib.File files which are
             # either in the source root, or generated with configure_file and
