@@ -2019,9 +2019,9 @@ class Interpreter(InterpreterBase, HoldableObject):
             command[0] = self.find_program_impl([command[0]])
 
         if len(inputs) > 1 and kwargs['feed']:
-            raise InvalidArguments('custom_target: "feed" keyword argument can only be used used with a single input')
+            raise InvalidArguments('custom_target: "feed" keyword argument can only be used with a single input')
         if len(kwargs['output']) > 1 and kwargs['capture']:
-            raise InvalidArguments('custom_target: "capture" keyword argument can only be used used with a single output')
+            raise InvalidArguments('custom_target: "capture" keyword argument can only be used with a single output')
         if kwargs['capture'] and kwargs['console']:
             raise InvalidArguments('custom_target: "capture" and "console" keyword arguments are mutually exclusive')
         for c in command:
