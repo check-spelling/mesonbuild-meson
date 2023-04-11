@@ -357,7 +357,7 @@ are found, and silently continue if Visual Studio activation fails.
 
 `meson setup --vsenv` command line argument can now be used to force Visual Studio
 activation even when other compilers are found. It also make Meson abort with an
-error message when activation fails. This is especially useful for Github Action
+error message when activation fails. This is especially useful for GitHub Action
 because their Windows images have gcc in their PATH by default.
 
 `--vsenv` is set by default when using `vs` backend.
