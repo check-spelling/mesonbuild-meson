@@ -470,7 +470,7 @@ def typed_kwargs(name: str, *types: KwargInfo, allow_unknown: bool = False) -> T
     information. For non-required values it sets the value to a default, which
     means the value will always be provided.
 
-    If type tyhpe is a :class:ContainerTypeInfo, then the default value will be
+    If type is a :class:ContainerTypeInfo, then the default value will be
     passed as an argument to the container initializer, making a shallow copy
 
     :param name: the name of the function, including the object it's attached to
