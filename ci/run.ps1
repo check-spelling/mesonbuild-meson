@@ -76,7 +76,7 @@ foreach ($prog in $progs) {
 
 
 echo ""
-echo "Ninja / MSBuld version:"
+echo "Ninja / MSBuild version:"
 if ($env:backend -eq 'ninja') {
   ninja --version
 } else {
