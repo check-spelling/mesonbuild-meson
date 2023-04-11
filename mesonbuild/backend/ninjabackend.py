@@ -750,7 +750,7 @@ class NinjaBackend(backends.Backend):
         '''
         Adds the source file introspection information for a language of a target
 
-        Internal introspection storage formart:
+        Internal introspection storage format:
         self.introspection_data = {
             '<target ID>': {
                 <id tuple>: {
