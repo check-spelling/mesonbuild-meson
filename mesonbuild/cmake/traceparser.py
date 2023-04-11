@@ -509,7 +509,7 @@ class CMakeTraceParser:
             targets += curr.split(';')
 
         if not args:
-            return self._gen_exception('set_property', 'faild to parse argument list', tline)
+            return self._gen_exception('set_property', 'failed to parse argument list', tline)
 
         if len(args) == 1:
             # Tries to set property to nothing so nothing has to be done
