@@ -679,7 +679,7 @@ class AllPlatformTests(BasePlatformTests):
         with open(os.path.join(self.logdir, 'testlog-good.txt'), encoding='utf-8') as f:
             exclude_suites_log = f.read()
         self.assertNotIn('buggy', exclude_suites_log)
-        # --suite overrides add_test_setup(xclude_suites)
+        # --suite overrides add_test_setup(exclude_suites)
         self._run(self.mtest_command + ['--setup=good', '--suite', 'buggy'])
         with open(os.path.join(self.logdir, 'testlog-good.txt'), encoding='utf-8') as f:
             include_suites_log = f.read()
