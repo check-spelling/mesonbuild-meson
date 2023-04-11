@@ -583,7 +583,7 @@ def typed_kwargs(name: str, *types: KwargInfo, allow_unknown: bool = False) -> T
                 else:
                     # set the value to the default, this ensuring all kwargs are present
                     # This both simplifies the typing checking and the usage
-                    assert check_value_type(types_tuple, info.default), f'In funcion {name} default value of {info.name} is not a valid type, got {type(info.default)} expected {types_description(types_tuple)}'
+                    assert check_value_type(types_tuple, info.default), f'In function {name} default value of {info.name} is not a valid type, got {type(info.default)} expected {types_description(types_tuple)}'
                     # Create a shallow copy of the container. This allows mutable
                     # types to be used safely as default values
                     kwargs[info.name] = copy.copy(info.default)
