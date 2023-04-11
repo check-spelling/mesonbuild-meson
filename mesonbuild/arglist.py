@@ -198,7 +198,7 @@ class CompilerArgs(T.MutableSequence[str]):
         """Returns whether the argument can be safely de-duped.
 
         In addition to these, we handle library arguments specially.
-        With GNU ld, we surround library arguments with -Wl,--start/end-gr -> Dedupoup
+        With GNU ld, we surround library arguments with -Wl,--start/end-gr -> Dedup
         to recursively search for symbols in the libraries. This is not needed
         with other linkers.
         """
