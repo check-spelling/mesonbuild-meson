@@ -325,7 +325,7 @@ class QmakeQtDependency(_QtBase, ConfigToolDependency, metaclass=abc.ABCMeta):
                     self.compile_args.append('-I' + directory)
             libfiles = self.clib_compiler.find_library(
                 self.qtpkgname + module + modules_lib_suffix, self.env,
-                mesonlib.listify(libdir)) # TODO: shouldn't be necissary
+                mesonlib.listify(libdir)) # TODO: shouldn't be necessary
             if libfiles:
                 libfile = libfiles[0]
             else:
