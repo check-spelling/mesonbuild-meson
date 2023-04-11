@@ -586,7 +586,7 @@ class CMakeTraceParser:
         #
         # Neither of these is awesome for obvious reasons. I'm going to try
         # option 1 first and fall back to 2, as 1 requires less code and less
-        # synchroniztion for cmake changes.
+        # synchronization for cmake changes.
         #
         # With the JSON output format, introduced in CMake 3.17, spaces are
         # handled properly and we don't have to do either options
