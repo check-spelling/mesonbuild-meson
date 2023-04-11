@@ -586,7 +586,7 @@ class CoreData:
         except TypeError:
             return value
         if option.name.endswith('dir') and value.is_absolute() and \
-           option not in BULITIN_DIR_NOPREFIX_OPTIONS:
+           option not in BUILTIN_DIR_NOPREFIX_OPTIONS:
             try:
                 # Try to relativize the path.
                 value = value.relative_to(prefix)
@@ -838,7 +838,7 @@ class CoreData:
         if pfk in options:
             prefix = self.sanitize_prefix(options[pfk])
             dirty |= self.options[OptionKey('prefix')].set_value(prefix)
-            for key in BULITIN_DIR_NOPREFIX_OPTIONS:
+            for key in BUILTIN_DIR_NOPREFIX_OPTIONS:
                 if key not in options:
                     dirty |= self.options[key].set_value(BUILTIN_OPTIONS[key].prefixed_default(key, prefix))
 
@@ -1194,7 +1194,7 @@ class BuiltinOption(T.Generic[_T, _U]):
         if self.opt_type in [UserComboOption, UserIntegerOption]:
             return self.default
         try:
-            return BULITIN_DIR_NOPREFIX_OPTIONS[name][prefix]
+            return BUILTIN_DIR_NOPREFIX_OPTIONS[name][prefix]
         except KeyError:
             pass
         return self.default
@@ -1283,7 +1283,7 @@ BUILTIN_OPTIONS_PER_MACHINE: 'MutableKeyedOptionDictType' = OrderedDict([
 
 # Special prefix-dependent defaults for installation directories that reside in
 # a path outside of the prefix in FHS and common usage.
-BULITIN_DIR_NOPREFIX_OPTIONS: T.Dict[OptionKey, T.Dict[str, str]] = {
+BUILTIN_DIR_NOPREFIX_OPTIONS: T.Dict[OptionKey, T.Dict[str, str]] = {
     OptionKey('sysconfdir'):     {'/usr': '/etc'},
     OptionKey('localstatedir'):  {'/usr': '/var',     '/usr/local': '/var/local'},
     OptionKey('sharedstatedir'): {'/usr': '/var/lib', '/usr/local': '/var/local/lib'},
