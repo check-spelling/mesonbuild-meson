@@ -74,7 +74,7 @@ local -a meson_commands=(
 'configure:configure a project'
 'dist:generate release archive'
 'init:create a new project'
-'install:install one more more targets'
+'install:install one or more targets'
 'introspect:query project properties'
 'setup:set up a build directory'
 'test:run tests'
