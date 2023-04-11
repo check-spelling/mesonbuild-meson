@@ -707,7 +707,7 @@ class CoreData:
         elif key.name in {'wrap_mode', 'force_fallback_for'}:
             # We could have the system dependency cached for a dependency that
             # is now forced to use subproject fallback. We probably could have
-            # more fine grained cache invalidation, but better be safe.
+            # more fine-grained cache invalidation, but better be safe.
             self.clear_deps_cache()
             dirty = True
 
