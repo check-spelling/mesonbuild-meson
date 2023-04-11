@@ -1001,7 +1001,7 @@ class Interpreter(InterpreterBase, HoldableObject):
         # Duplicates are possible when subproject uses files from project root
         if build_def_files:
             self.build_def_files.update(build_def_files)
-        # We always need the subi.build_def_files, to propgate sub-sub-projects
+        # We always need the subi.build_def_files, to propagate sub-sub-projects
         self.build_def_files.update(subi.build_def_files)
         self.build.merge(subi.build)
         self.build.subprojects[subp_name] = subi.project_version
