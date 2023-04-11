@@ -2624,7 +2624,7 @@ https://gcc.gnu.org/bugzilla/show_bug.cgi?id=47485'''))
         # has pdb file called foo.pdb. So will a static library
         # foo.lib, which clobbers both foo.pdb _and_ the dll file's
         # export library called foo.lib (by default, currently we name
-        # them libfoo.a to avoidt this issue). You can give the files
+        # them libfoo.a to avoid this issue). You can give the files
         # unique names such as foo_exe.pdb but VC also generates a
         # bunch of other files which take their names from the target
         # basename (i.e. "foo") and stomp on each other.
