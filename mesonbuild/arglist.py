@@ -204,7 +204,7 @@ class CompilerArgs(T.MutableSequence[str]):
         """
 
         # A standalone argument must never be deduplicated because it is
-        # defined by what comes _after_ it. Thus dedupping this:
+        # defined by what comes _after_ it. Thus deduping this:
         # -D FOO -D BAR
         # would yield either
         # -D FOO BAR
