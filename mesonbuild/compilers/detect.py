@@ -1073,7 +1073,7 @@ def detect_d_compiler(env: 'Environment', for_machine: MachineChoice) -> Compile
         if 'LLVM D compiler' in out:
             cls = d.LLVMDCompiler
             # LDC seems to require a file
-            # We cannot use NamedTemproraryFile on windows, its documented
+            # We cannot use NamedTemporaryFile on windows, its documented
             # to not work for our uses. So, just use mkstemp and only have
             # one path for simplicity.
             o, f = tempfile.mkstemp('.d')
@@ -1111,7 +1111,7 @@ def detect_d_compiler(env: 'Environment', for_machine: MachineChoice) -> Compile
         elif 'The D Language Foundation' in out or 'Digital Mars' in out:
             cls = d.DmdDCompiler
             # DMD seems to require a file
-            # We cannot use NamedTemproraryFile on windows, its documented
+            # We cannot use NamedTemporaryFile on windows, its documented
             # to not work for our uses. So, just use mkstemp and only have
             # one path for simplicity.
             o, f = tempfile.mkstemp('.d')
