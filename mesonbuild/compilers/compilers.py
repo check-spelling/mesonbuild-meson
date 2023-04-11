@@ -1266,7 +1266,7 @@ class Compiler(HoldableObject, metaclass=abc.ABCMeta):
                        mode: str = 'compile', want_output: bool = False,
                        disable_cache: bool = False,
                        temp_dir: str = None) -> T.Iterator[T.Optional[CompileResult]]:
-        """Helper for getting a cacched value when possible.
+        """Helper for getting a cached value when possible.
 
         This method isn't meant to be called externally, it's mean to be
         wrapped by other methods like compiles() and links().
