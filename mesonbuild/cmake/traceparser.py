@@ -575,7 +575,7 @@ class CMakeTraceParser:
 
             targets.append(curr)
 
-        # Now we need to try to reconsitute the original quoted format of the
+        # Now we need to try to reconstitute the original quoted format of the
         # arguments, as a property value could have spaces in it. Unlike
         # set_property() this is not context free. There are two approaches I
         # can think of, both have drawbacks:
