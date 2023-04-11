@@ -432,7 +432,7 @@ class CLikeCompiler(Compiler):
                            extra_args: T.Union[None, arglist.CompilerArgs, T.List[str], T.Callable[[CompileCheckMode], T.List[str]]],
                            dependencies: T.Optional[T.List['Dependency']],
                            mode: CompileCheckMode = CompileCheckMode.COMPILE) -> arglist.CompilerArgs:
-        # TODO: the caller should handle the listfing of these arguments
+        # TODO: the caller should handle the listing of these arguments
         if extra_args is None:
             extra_args = []
         else:
