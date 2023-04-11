@@ -288,7 +288,7 @@ class CMakeTraceParser:
         raise CMakeException(f'CMake: {function}() {error}\n{tline}')
 
     def _cmake_set(self, tline: CMakeTraceLine) -> None:
-        """Handler for the CMake set() function in all variaties.
+        """Handler for the CMake set() function in all varieties.
 
         comes in three flavors:
         set(<var> <value> [PARENT_SCOPE])
