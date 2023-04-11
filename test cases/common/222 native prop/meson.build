@@ -8,7 +8,7 @@ x = meson.get_external_property('astring', native: true)
 assert(x=='mystring', 'did not get native property with native:true and non-cross build.')
 
 x = meson.get_external_property('astring', 'fallback', native: false)
-assert(x==ref, 'did not get get native property with native:false and non-cross build.')
+assert(x==ref, 'did not get native property with native:false and non-cross build.')
 
 
 x = meson.get_external_property('notexist', 'fallback')
