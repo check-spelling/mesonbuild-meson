@@ -2318,11 +2318,11 @@ class OptionKey:
         return self.evolve(subproject='')
 
     def as_build(self) -> 'OptionKey':
-        """Convenience method for key.evolve(machine=MachinceChoice.BUILD)."""
+        """Convenience method for key.evolve(machine=MachineChoice.BUILD)."""
         return self.evolve(machine=MachineChoice.BUILD)
 
     def as_host(self) -> 'OptionKey':
-        """Convenience method for key.evolve(machine=MachinceChoice.HOST)."""
+        """Convenience method for key.evolve(machine=MachineChoice.HOST)."""
         return self.evolve(machine=MachineChoice.HOST)
 
     def is_backend(self) -> bool:
