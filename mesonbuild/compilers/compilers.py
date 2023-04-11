@@ -1361,7 +1361,7 @@ def get_global_options(lang: str,
         # If the compiler acts as a linker driver, and we're using the
         # environment variable flags for both the compiler and linker
         # arguments, then put the compiler flags in the linker flags as well.
-        # This is how autotools works, and the env vars freature is for
+        # This is how autotools works, and the env vars feature is for
         # autotools compatibility.
         largs.extend_value(comp_options)
 
