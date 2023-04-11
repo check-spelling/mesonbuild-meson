@@ -1294,7 +1294,7 @@ class NinjaBackend(backends.Backend):
             if build.rulename in self.ruledict:
                 build.rule = self.ruledict[build.rulename]
             else:
-                mlog.warning(f"build statement for {build.outfilenames} references non-existent rule {build.rulename}")
+                mlog.warning(f"build statement for {build.outfilenames} references nonexistent rule {build.rulename}")
 
     def write_rules(self, outfile):
         for b in self.build_elements:
