@@ -299,6 +299,6 @@ kwargs:
       If it is a [[shared_library]] it defaults to "lib", and may be "lib",
       "dylib", "cdylib", or "proc-macro". If "lib" then Rustc will pick a
       default, "cdylib" means a C ABI library, "dylib" means a Rust ABI, and
-      "proc-macro" is a special rust proceedural macro crate.
+      "proc-macro" is a special rust procedural macro crate.
 
       "proc-macro" is new in 0.62.0.
