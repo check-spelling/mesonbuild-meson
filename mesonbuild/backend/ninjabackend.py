@@ -1035,7 +1035,7 @@ class NinjaBackend(backends.Backend):
         rule_name = 'depscan'
         scan_sources = self.select_sources_to_scan(compiled_sources)
 
-        # Dump the sources as a json list. This avoids potential probllems where
+        # Dump the sources as a json list. This avoids potential problems where
         # the number of sources passed to depscan exceeds the limit imposed by
         # the OS.
         with open(json_abs, 'w', encoding='utf-8') as f:
