@@ -1228,7 +1228,7 @@ class Compiler(HoldableObject, metaclass=abc.ABCMeta):
                            mode: CompileCheckMode = CompileCheckMode.COMPILE) -> CompilerArgs:
         """Arguments to pass the build_wrapper helper.
 
-        This generally needs to be set on a per-language baises. It provides
+        This generally needs to be set on a per-language basis. It provides
         a hook for languages to handle dependencies and extra args. The base
         implementation handles the most common cases, namely adding the
         check_arguments, unwrapping dependencies, and appending extra args.
