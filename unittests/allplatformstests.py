@@ -679,7 +679,7 @@ class AllPlatformTests(BasePlatformTests):
         with open(os.path.join(self.logdir, 'testlog-good.txt'), encoding='utf-8') as f:
             exclude_suites_log = f.read()
         self.assertNotIn('buggy', exclude_suites_log)
-        # --suite overrides add_test_setup(xclude_suites)
+        # --suite overrides add_test_setup(exclude_suites)
         self._run(self.mtest_command + ['--setup=good', '--suite', 'buggy'])
         with open(os.path.join(self.logdir, 'testlog-good.txt'), encoding='utf-8') as f:
             include_suites_log = f.read()
@@ -1760,10 +1760,10 @@ class AllPlatformTests(BasePlatformTests):
         since system libraries -lm will never be found statically.
         https://github.com/mesonbuild/meson/issues/2785
         '''
-        (cc, stlinker, objext, shext) = self.detect_prebuild_env()
+        (cc, stlinker, object, shext) = self.detect_prebuild_env()
         testdir = os.path.join(self.unit_test_dir, '18 pkgconfig static')
         source = os.path.join(testdir, 'foo.c')
-        objectfile = os.path.join(testdir, 'foo.' + objext)
+        objectfile = os.path.join(testdir, 'foo.' + object)
         stlibfile = os.path.join(testdir, 'libfoo.a')
         impfile = os.path.join(testdir, 'foo.lib')
         if cc.get_argument_syntax() == 'msvc':
@@ -2228,7 +2228,7 @@ class AllPlatformTests(BasePlatformTests):
         msg = ('''DEPRECATION: target prog links against shared module mymod, which is incorrect.
              This will be an error in the future, so please use shared_library() for mymod instead.
              If shared_module() was used for mymod because it has references to undefined symbols,
-             use shared_libary() with `override_options: ['b_lundef=false']` instead.''')
+             use shared_library() with `override_options: ['b_lundef=false']` instead.''')
         self.assertIn(msg, out)
 
     def test_mixed_language_linker_check(self):
