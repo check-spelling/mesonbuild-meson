@@ -16,7 +16,7 @@ from __future__ import annotations
 
 """Mixin classes to be shared between C and C++ compilers.
 
-Without this we'll end up with awful diamond inherintance problems. The goal
+Without this we'll end up with awful diamond inheritance problems. The goal
 of this is to have mixin's, which are classes that are designed *not* to be
 standalone, they only work through inheritance.
 """
