@@ -1928,7 +1928,7 @@ class NinjaBackend(backends.Backend):
         # before that it would treat linking two static libraries as
         # whole-archive linking. However, to make this work we have to disable
         # bundling, which can't be done until 1.63.0… So for 1.61–1.62 we just
-        # have to hope that the default cases of +whole-archive are sufficent.
+        # have to hope that the default cases of +whole-archive are sufficient.
         # See: https://github.com/rust-lang/rust/issues/99429
         if mesonlib.version_compare(rustc.version, '>= 1.63.0'):
             whole_archive = ':+whole-archive,-bundle'
