@@ -472,7 +472,7 @@ class CoreData:
         # want to overwrite options for such subprojects.
         self.initialized_subprojects: T.Set[str] = set()
 
-        # For host == build configuraitons these caches should be the same.
+        # For host == build configurations these caches should be the same.
         self.deps: PerMachine[DependencyCache] = PerMachineDefaultable.default(
             self.is_cross_build(),
             DependencyCache(self.options, MachineChoice.BUILD),
