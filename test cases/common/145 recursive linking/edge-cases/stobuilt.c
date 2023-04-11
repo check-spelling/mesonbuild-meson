@@ -2,6 +2,6 @@
 
 
 SYMBOL_EXPORT
-int get_builto_value (void) {
+int get_built_value (void) {
   return 1;
 }
