@@ -545,7 +545,7 @@ class NinjaBackend(backends.Backend):
         # We want to match 'Note: including file: ' in the line
         # 'Note: including file: d:\MyDir\include\stdio.h', however
         # different locales have different messages with a different
-        # number of colons. Match up to the the drive name 'd:\'.
+        # number of colons. Match up to the drive name 'd:\'.
         # When used in cross compilation, the path separator is a
         # forward slash rather than a backslash so handle both; i.e.
         # the path is /MyDir/include/stdio.h.
